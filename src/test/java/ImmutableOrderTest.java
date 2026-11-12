@@ -81,7 +81,7 @@ public class ImmutableOrderTest {
     }
 
     @Test
-    void shouldDeclineBlankName() {
+    void shouldDeclineNullPhone() {
         assertThrows(NullPointerException.class, () ->
                 new ImmutableOrder(
                         "Vlad",
@@ -89,4 +89,7 @@ public class ImmutableOrderTest {
                         new Address("Moscow")
                 ));
     }
+
 }
+
+

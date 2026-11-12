@@ -21,7 +21,4 @@ public class Address {
     public void setCity(String city){
         this.city = ValidationUtils.verifyData(city);
     }
-
-
-
 }
